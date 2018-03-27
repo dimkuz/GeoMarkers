@@ -40,17 +40,15 @@ public class ShowMap extends HttpServlet {
             out.println("<script src='https://maps.api.2gis.ru/2.0/loader.js'></script>");
             out.println("</head>");
             out.println("<body>");
-        out.println("<div id='map' style='width: 100%; height: 400px;'></div>");
-        out.println("<script>");
+            out.println("<div id='map' style='width: 100%; height: 400px;'></div>");
+            out.println("<script>");
             out.println("DG.then(function() {");
                 out.println("DG.map('map', {");
                     out.println("center: [54.98, 82.89],");
                     out.println("zoom: 13");
                 out.println("});");
-            out.println("});");
-        out.println("</script>");
-            
-            
+                out.println("});");
+            out.println("</script>");
             out.println("</body>");
             out.println("</html>");
         }
